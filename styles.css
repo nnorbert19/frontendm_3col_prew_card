@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Lexend Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+ @import url(https://fonts.google.com/specimen/Lexend+Deca);
+ @import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan:hsl(184, 100%, 22%);
+    --veryDarkCyan:hsl(179, 100%, 13%);
+
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray:hsl(0, 0%, 95%);
+
+    background-color:var(--veryLightGray);
+    
+}
+.body{ 
+    width: 100%;
+    height: 100%;
+    background-color:var(--veryLightGray);
+    font-Family:'Lexend Deca','Big Shoulders Display';
+}
+
+p{
+    color: var(--transparentWhite);
+}
+
+h1{
+    color:var(--veryLightGray);
+}
+
+.container{
+    font-Family:'Lexend Deca','Big Shoulders Display';
+    width:800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.sedan{
+    height: 100%;
+    background-color: var(--brightOrange);
+}
+
+.suv{
+    height: 100%; 
+    background-color: var(--darkCyan);
+}
+
+.luxury{ 
+    height: 100%;
+    background-color: var(--veryDarkCyan);
+}
+
+.btn-sedan{
+    margin-top:60px;
+    width: 125px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid var(--transparentWhite);
+    color: var(--brightOrange);
+}
+
+.btn-suv{
+    margin-top:60px;
+    width: 125px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid var(--transparentWhite);
+    color: var(--darkCyan);
+}
+
+button:hover{
+    background-color: rgba(255,255,255,0);
+    color: var(--transparentWhite);
+    cursor: pointer;
+}
+
+.btn-luxury{
+    margin-top:60px;
+    width: 125px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid var(--transparentWhite);
+    color: var(--veryDarkCyan);
+}
+
+.margin{
+    height: 100%;
+    margin:40px 40px 20px 40px;
+}
+
+.img-responsive{
+    width: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        flex-direction:column;
+        width: 350px;
+        height:1500px;
+    }
+    .sedan{
+        height:400px;
+        width:100%;
+    }
+    .suv{
+        height:400px;
+    }
+    .luxury{
+        height:400px;
+    }
+    .margin{
+        margin: 20vw 20vw 20vw 20vw;
+    }
+    button{
+        margin-top:0;
+    }
+}
