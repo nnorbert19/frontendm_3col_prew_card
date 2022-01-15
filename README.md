@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nnorbert19/frontendm_3col_prew_card)
-- Live Site URL: [Add live site URL here](https://nnorbert19-3col-prew-card.netlify.app/)
+- Solution URL: (https://github.com/nnorbert19/frontendm_3col_prew_card)
+- Live Site URL: (https://nnorbert19-3col-prew-card.netlify.app/)
 
 
 ### Built with
